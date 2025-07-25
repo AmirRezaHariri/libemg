@@ -684,7 +684,6 @@ def mindrove_streamer(shared_memory_items = None):
     m.start()
     return m, shared_memory_items
 
-
 def otb_muovi_plus_streamer(shared_memory_items = None,
                             ip: str = '0.0.0.0',
                             port: int = 54321,

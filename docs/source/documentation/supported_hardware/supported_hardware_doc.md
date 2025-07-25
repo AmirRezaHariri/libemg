@@ -26,6 +26,8 @@ By default, LibEMG supports several hardware devices (shown in Table 1).
 - The [**MindRove Armband**](https://mindrove.com/armband/) is a commercial device that samples 8-channel EMG at 500 Hz (24 bit) and IMU at 50 Hz. Data are streamed over a Wifi connection.
 - The [**OTB Muovi+**](https://otbioelettronica.it/en/muoviplus/) is part of the OTBioelettronica hardware family and supports High Density EMG (HDEMG). 
 <!-- - The [**OTBioelettronica**](https://otbioelettronica.it/hardware/) devices are a set of commercially available HDEMG systems. -->
+- The [**MindRove Armband**](https://mindrove.com/armband/) is a commercial device that samples 8-channel EMG at 500 Hz (24 bit) and IMU at 50 Hz. Data are streamed over a Wifi connection.
+
 
 
 If selecting EMG hardware for real-time use, wireless armbands that sample above 500 Hz are preferred. Additionally, future iterations of LibEMG will include Inertial Measurement Unit (IMU) support. As such, devices should have IMUs to enable more interaction opportunities.
@@ -38,7 +40,6 @@ If selecting EMG hardware for real-time use, wireless armbands that sample above
 | Oymotion                  | `oymotion_streamer()`                          | <div class="device_img">![](devices/oymotion.png) </div>        |
 | MindRove Armband          | `mindrove_streamer()`                          | <div class="device_img">![](devices/mindrove.png) </div>        |
 | Muovi+                    | `otb_muovi_plus_streamer()`                    | <div class="device_img">![](devices/muovi+.png) </div>          |
-
 <!-- | Muovi | `otb_muovi_streamer()`| <div class="device_img">![](devices/muovi.png) </div>| 
 | Sessantaquattro+ | `otb_sessantaquattro_plus_streamer()`| <div class="device_img">![](devices/sess.png) </div>|  -->
 
