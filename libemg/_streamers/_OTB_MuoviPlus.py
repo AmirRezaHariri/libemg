@@ -6,7 +6,7 @@ import atexit
 
 from multiprocessing import Event, Process
 from libemg.shared_memory_manager import SharedMemoryManager
-from crc.crc import Crc8, CrcCalculator
+from crc import Crc8, Calculator
 
 """
 OT Bioelettronica
@@ -343,7 +343,7 @@ class OTBMuoviPlusEMGStreamer(Process):
         """Send a packet to the OTB MuoviPlus device."""
         if self.client:
             packet = bytearray(sig_bits)
-            crc_calc = CrcCalculator(Crc8.MAXIM_DOW)
+            crc_calc = Calculator(Crc8.MAXIM_DOW)
             packet.append(crc_calc.calculate_checksum(packet))
             self.client.send(packet)
 
